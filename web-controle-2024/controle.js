@@ -176,7 +176,7 @@ function deletaTransacao(id) {
   });
   balancoH1.innerHTML = `R$${saldo.toFixed(2)}`;
 
-  localStorage.setItem(chave_transcoes_ls, JSON.stringify(transacoesSalvas));
+  localStorage.removeItem(chave_transcoes_ls);
 }
 
 
